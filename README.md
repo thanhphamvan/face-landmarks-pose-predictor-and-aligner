@@ -2,11 +2,11 @@
 
 ## Source
 
-### Papers
-
 [**One Millisecond Face Alignment with an Ensemble of Regression Trees - Vahid Kazemi and Josephine Sullivan** - Royal Institute of Technology, Stockholm, Sweden](http://www.csc.kth.se/~vahidk/papers/KazemiCVPR14.pdf).
 
-[Wikipedia's Affine Transformation](https://en.wikipedia.org/wiki/Affine_transformation).
+[Wikipedia's **Affine Transformation**](https://en.wikipedia.org/wiki/Affine_transformation).
+
+[Dlib's blog: **Real-Time Face Pose Estimation - Davis King** - 2014](http://blog.dlib.net/2014/08/real-time-face-pose-estimation.html).
 
 ### Libraries and Examples
 
