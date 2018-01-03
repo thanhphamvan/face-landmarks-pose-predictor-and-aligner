@@ -1,0 +1,8 @@
+*.dat
+*/**/*.dat
+models
+__pycache__
+*/**/.png
+*/**/.jpg
+*/**/.jpeg
+.idea
