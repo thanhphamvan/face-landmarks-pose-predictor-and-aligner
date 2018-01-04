@@ -3,7 +3,7 @@ import cv2
 import openface
 
 # http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
-predictor_model = '../models/shape_predictor_68_face_landmarks.dat'
+predictor_model = '/home/thanhpv/workspace/pre-processing-face/models/face_landmarks.dat'
 
 face_detector = dlib.get_frontal_face_detector()
 face_pose_predictor = dlib.shape_predictor(predictor_model)
