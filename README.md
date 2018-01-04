@@ -48,12 +48,19 @@ Vì vậy, một tiền xử lý dữ liệu là cần thiết ([OpenFace's Docs
 
 Để giải quyết vấn đề này, suy nghĩ đơn giản nhất là "đưa các bộ phận đặc trưng (mắt, mũi, miệng, ...) luôn nằm ở một vị trí cố định".
 
-### Face's Landmarks and Pose Predictor
+### Face Landmarks and Pose Predictor
 
-TODO
+Face Landmark hay "các điểm đặc trưng trên khuôn mặt" là một trong những thành phần cơ bản của những tác vụ liên quan đến "khuôn mặt con người" như: nhận diện khuôn mặt, sinh trắc học, v.v...
+
+Theo thông thường, việc nhân diện các điểm đặc trưng này là vấn đề độc lập. Những cách thông thường để giải quyết vấn đề này thường là phép đối chiếu trên từng các khuôn mẫu (template) hoặc trên dựa trên phân tích hồi quy. Ví dụ, Sun et al. có đưa ra [phương pháp](https://www.cv-foundation.org/openaccess/content_cvpr_2013/papers/Sun_Deep_Convolutional_Network_2013_CVPR_paper.pdf) nhận diện các điểm đặc trưng trên khuôn mặt sử dụng coarse-to-fine (từ thô đến mịn?) phân tích hồi quy sử dụng một mạng nơ-ron tích chập. Phương pháp này đã đạt được kết quả rất cao so với những phương pháp trước đó và đã được áp dụng trong các hệ thống thương mại. Phương pháp này yêu cầu một lượng lớn và phức tạp các mô hình thác nước trong mạng ẩn.
+
+Trong một số báo cáo khoa học, nhiều nhà khoa học máy tính cho rằng đây không phải là vấn đề độc lập, và rõ ràng kết quả của kỹ thuật hoàn toàn có thể bị ảnh hưởng bởi những yếu tố tương quan nhỏ và không đồng nhất (heterogeneous and subtly correlated factors). Ví dụ như, khi một đứa bé cười, miệng nó mở to, rõ ràng rằng nếu chúng ta nắm được các thông tin về cảm xúc cũng như là đặc điểm khuôn mặt thì việc định dạng các điểm đặc trưng sẽ chính xác hơn rất nhiều.
+
+#### Landmark detection bằng CNN
+
+Sun el at. đã được ra phương pháp sử dụng mạng CNN nhiều tầng. Phương pháp này yêu cầu phải có tập huấn luyện gồm các khuôn mặt đã được tách biệt ra thành các bộ phận riêng biệt, và mỗi bộ phận được xử lý bởi một mạng CNN riêng biệt cho riêng phần đấy.
 
 ### 2D feature-based alignment
-
 
 #### Parametric transformations
 
