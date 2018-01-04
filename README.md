@@ -2,14 +2,28 @@
 
 ## Source
 
+[[Paper]Rapid Object Detection using a Boosted Cascade of Simple Features - Paul Viola and Michael Jones - 2001](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf).
+
 [[Book]Computer Vision: Algorithms and Applications - Richard Szeliski - Springer - 2010](http://szeliski.org/Book/)
 
-[[Paper]**One Millisecond Face Alignment with an Ensemble of Regression Trees - Vahid Kazemi and Josephine Sullivan** - Royal Institute of Technology, Stockholm, Sweden](http://www.csc.kth.se/~vahidk/papers/KazemiCVPR14.pdf).
+[[Paper]Constrained Local Neural Fields for robust facial landmark detection in the wild - Tadas Baltrusaitis, Peter Robinson, and Louis-Philippe Morency - 2013](https://www.cl.cam.ac.uk/~tb346/pub/papers/iccv2013.pdf)
 
-[[Wiki]**Affine Transformation**](https://en.wikipedia.org/wiki/Affine_transformation).
+[[Paper]Facial Landmark Detection by Deep Multi-task Learning - Zhanpeng Zhang, Ping Luo, Chen Change Loy, and Xiaoou Tang - 2014](http://personal.ie.cuhk.edu.hk/~ccloy/files/eccv_2014_deepfacealign.pdf).
 
-[[Blog]Dlib's **Real-Time Face Pose Estimation - Davis King** - 2014](http://blog.dlib.net/2014/08/real-time-face-pose-estimation.html).
+[[Paper]One Millisecond Face Alignment with an Ensemble of Regression Trees - Vahid Kazemi and Josephine Sullivan - Royal Institute of Technology, Stockholm, Sweden](http://www.csc.kth.se/~vahidk/papers/KazemiCVPR14.pdf).
 
+[[Wiki]Affine Transformation](https://en.wikipedia.org/wiki/Affine_transformation).
+
+[[Blog]Dlib's Real-Time Face Pose Estimation - Davis King - 2014](http://blog.dlib.net/2014/08/real-time-face-pose-estimation.html).
+
+### Datasets and Pre-trained Models
+
+[Labeled Face Parts in the Wild (LFPW) Dataset - Kriegman-Belhumeur Vision Technologies, LLC](https://neerajkumar.org/databases/lfpw/).
+
+[Helen dataset](http://www.ifp.illinois.edu/~vuongle2/helen/).
+
+![](./etc/dataset_sample.png)
+ 
 ### Libraries and Examples
 
 [Dlib](http://dlib.net/) and its [Python binding](https://pypi.python.org/pypi/dlib).
@@ -76,3 +90,7 @@ Trong bức ảnh trên là một số ví dụ trực quan về các phép bi�
 
 ```
 ![](./etc/inverse_wrapping.png)
+
+### Affine Transformation
+
+![](./etc/transformations.png)
