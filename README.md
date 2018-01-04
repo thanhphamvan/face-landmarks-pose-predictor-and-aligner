@@ -58,9 +58,23 @@ Trong một số báo cáo khoa học, nhiều nhà khoa học máy tính cho r�
 
 #### Landmark detection bằng CNN
 
-Sun el at. đã được ra phương pháp sử dụng mạng CNN nhiều tầng. Phương pháp này yêu cầu phải có tập huấn luyện gồm các khuôn mặt đã được tách biệt ra thành các bộ phận riêng biệt, và mỗi bộ phận được xử lý bởi một mạng CNN riêng biệt cho riêng phần đấy.
+Sun el at. đã đưa ra phương pháp sử dụng mạng CNN nhiều tầng. Phương pháp này yêu cầu phải có tập huấn luyện gồm các khuôn mặt đã được tách biệt ra thành các bộ phận riêng biệt, và mỗi bộ phận được xử lý bởi một mạng CNN riêng biệt cho riêng phần đấy.
+
+Trong project này, mô hình được sử dụng cùng với thư viện dlib được đưa ra vào [năm 2014 của Vahid Kazemi và Josephin Sullivan](http://www.csc.kth.se/~vahidk/papers/KazemiCVPR14.pdf) với cách tiếp cận tương tự.
+
+Ở đây, chúng ta cần xác định trên khuôn mặt 68 các điểm khác nhau.
+
+![](http://openface-api.readthedocs.io/en/latest/_images/dlib-landmark-mean.png)
+
+Dưới đây là kết quả của việc áp dụng phương pháp trên lên một khuôn mặt đã được định vị trước.
+
+![](https://cdn-images-1.medium.com/max/1600/1*xBJ4H2lbCMfzIfMrOm9BEQ.jpeg)
 
 ### 2D feature-based alignment
+
+Bước tiếp cận tiếp theo là chúng ta cần đưa khuôn mặt sau khi đã xác định được vị trí về chung một dạng cho trước sao có lợi nhất cho việc training bằng mạng CNN ở bước tiếp theo.
+
+![](https://cdn-images-1.medium.com/max/1600/1*igEzGcFn-tjZb94j15tCNA.png)
 
 #### Parametric transformations
 
